@@ -1,0 +1,32 @@
+= JsonPath explorer
+
+This is a tiny explorer for JsonPath expressions for the JsonPath dialect, that http://http://rest-assured.io[RestAssured] is using
+
+== Building
+
+----
+$ mvn install
+----
+
+== Running
+
+The build will create an uber jar, that you can directly run from the command line.
+The argument is the input file you want to use
+
+----
+$ java -jar target/jsonPathExplorer-1.0-SNAPSHOT.jar ./input.json
+----
+
+This then waits for your input with a `>` prompt and return the answer below
+
+----
+$ java -jar target/jsonPathExplorer-1.0-SNAPSHOT.jar ./input.json
+
+> vendor.name
+[msc-loaded-modules, BufferPool_used_memory_mapped, BufferPool_used_memory_direct]
+
+>
+
+----
+
+You can terminate this by just pressing return at the prompt.

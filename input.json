@@ -1,0 +1,109 @@
+{
+  "integration": [
+    {
+      "name": "ft:ftbla_mapped",
+      "displayName": "ft:ftbla_mapped",
+      "description": "Bla for ft mapped",
+      "type": "counter",
+      "unit": "byte",
+      "tags": "tier=\"integration\"",
+      "multi": false
+    },
+    {
+      "name": "ft:ftbla_direct",
+      "displayName": "ft:ftbla_direct",
+      "description": "Bla for ft direct",
+      "type": "counter",
+      "unit": "byte",
+      "tags": "tier=\"integration\"",
+      "multi": false
+    }
+  ],
+  "application": [
+    {
+      "name": "ola",
+      "displayName": "ola",
+      "description": "Just a demo value",
+      "type": "gauge",
+      "unit": "none",
+      "tags": "app=\"ola\",tier=\"integration\"",
+      "multi": false
+    },
+    {
+      "name": "hello",
+      "displayName": "hello",
+      "description": "Just another demo value",
+      "type": "counter",
+      "unit": "none",
+      "tags": "app=\"shop\",tier=\"integration\"",
+      "multi": false
+    }
+  ],
+  "vendor": [
+    {
+      "name": "msc-loaded-modules",
+      "displayName": "msc-loaded-modules",
+      "description": "Number of loaded modules",
+      "type": "gauge",
+      "unit": "none",
+      "tags": "tier=\"integration\"",
+      "multi": false
+    },
+    {
+      "name": "BufferPool_used_memory_mapped",
+      "displayName": "BufferPool_used_memory_mapped",
+      "description": "The memory used by the pool: mapped",
+      "type": "gauge",
+      "unit": "byte",
+      "tags": "tier=\"integration\"",
+      "multi": false
+    },
+    {
+      "name": "BufferPool_used_memory_direct",
+      "displayName": "BufferPool_used_memory_direct",
+      "description": "The memory used by the pool: direct",
+      "type": "gauge",
+      "unit": "byte",
+      "tags": "tier=\"integration\"",
+      "multi": false
+    }
+  ],
+  "base": [
+    {
+      "name": "thread-count",
+      "displayName": "Current Thread count",
+      "description": "Number of currently deployed threads",
+      "type": "gauge",
+      "unit": "none",
+      "tags": "tier=\"integration\"",
+      "multi": false
+    },
+    {
+      "name": "peak-thread-count",
+      "displayName": "peak-thread-count",
+      "description": "Max number of threads",
+      "type": "gauge",
+      "unit": "none",
+      "tags": "tier=\"integration\"",
+      "multi": false
+    },
+    {
+      "name": "total-started-thread-count",
+      "displayName": "total-started-thread-count",
+      "description": "Number of threads started for this server",
+      "type": "counter",
+      "unit": "none",
+      "tags": "tier=\"integration\"",
+      "multi": false
+    },
+    {
+      "name": "max-heap",
+      "displayName": "max-heap",
+      "description": "Number of threads started for this server",
+      "type": "counter",
+      "unit": "byte",
+      "tags": "domain=\"memory\",type=\"heap\",tier=\"integration\"",
+      "multi": false
+    }
+  ]
+}
